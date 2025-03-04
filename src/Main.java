@@ -1,5 +1,29 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import static javafx.application.Application.launch;
+
+public class Main extends Application {
+
+        @Override
+        public void start(Stage primaryStage) throws Exception {
+            // Carrega o arquivo FXML
+            Parent root = FXMLLoader.load(getClass().getResource("/View/view.fxml"));
+
+            // Configura a cena
+            Scene scene = new Scene(root, 1039, 559);
+
+            // Configura a janela
+            primaryStage.setTitle("Lanchonete dos amigos");
+            primaryStage.setResizable(false);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        }
+
+        public static void main(String[] args){
+            launch(args);
+        }
     }
-}
