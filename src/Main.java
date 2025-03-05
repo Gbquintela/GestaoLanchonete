@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -16,6 +17,7 @@ public class Main extends Application {
 
             // Configura a janela
             primaryStage.setTitle("Lanchonete dos amigos");
+            primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/View/images/icone.jpeg")));
             primaryStage.setResizable(false);
             primaryStage.setScene(scene);
             primaryStage.show();

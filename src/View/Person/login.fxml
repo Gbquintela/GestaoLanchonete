@@ -15,14 +15,14 @@
          <Pane prefHeight="565.0" prefWidth="1041.0">
              <children>
                  <Button fx:id="buttonLogin" layoutX="705.0" layoutY="293.0" onAction="#loginUser" prefHeight="26.0" prefWidth="212.0" text="Login" />
-                 <TextField fx:id="username" alignment="CENTER_RIGHT" layoutX="705.0" layoutY="194.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="212.0" />
+                 <TextField fx:id="username" layoutX="705.0" layoutY="194.0" prefHeight="26.0" prefWidth="212.0" />
                  <Label alignment="CENTER" layoutX="705.0" layoutY="168.0" prefHeight="26.0" prefWidth="73.0" text="Username:" textAlignment="RIGHT" />
                  <Label alignment="CENTER" layoutX="705.0" layoutY="230.0" prefHeight="26.0" prefWidth="73.0" text="Password:" textAlignment="RIGHT" />
-                 <PasswordField fx:id="password" alignment="CENTER_RIGHT" layoutX="705.0" layoutY="256.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="212.0" />
-                 <Button fx:id="buttonRegister1" layoutX="705.0" layoutY="366.0" onAction="#registerClient" prefHeight="26.0" prefWidth="212.0" text="Register" />
-                 <ImageView cache="true" cacheHint="QUALITY" depthTest="ENABLE" disable="true" fitHeight="565.0" fitWidth="526.0" layoutY="-1.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+                 <PasswordField fx:id="password" layoutX="705.0" layoutY="256.0" prefHeight="25.0" prefWidth="212.0" />
+                 <Button fx:id="buttonRegister1" layoutX="705.0" layoutY="366.0" onAction="#changeToRegisterScreen" prefHeight="26.0" prefWidth="212.0" text="Register" />
+                 <ImageView cache="true" cacheHint="QUALITY" depthTest="ENABLE" disable="true" fitHeight="559.0" fitWidth="526.0" layoutY="-1.0" pickOnBounds="true">
                      <image>
-                         <Image url="@../images/images.jpg" />
+                         <Image url="@../images/logo_lanchonete.jpeg" />
                      </image>
                  </ImageView>
              </children>
