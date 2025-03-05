@@ -8,8 +8,10 @@ public class PersonModel {
     // Declaração dos atributos
     private String name     ;
     private String cpf      ;
+    private String userName ;
     private String email    ;
     private String cellphone;
+    private String passWord ;
     private int id;
 
     // Declaração de uma lista privada que só irá ser acessada quando o Construtor da classe for acessado!
@@ -17,11 +19,13 @@ public class PersonModel {
     private static final List<PersonModel> personModelList = new ArrayList<>();
 
     // Inicialização dos atributos
-    public PersonModel(String name, String cpf, String email, String cellphone, int id) {
+    public PersonModel(String name, String cpf, String userName, String email, String cellphone , String passWord , int id) {
         this.name = name;
         this.cpf = cpf;
+        this.userName = userName;
         this.email = email;
         this.cellphone = cellphone;
+        this.passWord = passWord;
         this.id = id;
         personModelList.add(this); // Adiciono todos os atributos para a lista
     }
@@ -61,5 +65,21 @@ public class PersonModel {
 
     public int getId() {
         return id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 }
