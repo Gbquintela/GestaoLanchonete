@@ -4,14 +4,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import static javafx.application.Application.launch;
-
 public class Main extends Application {
 
         @Override
         public void start(Stage primaryStage) throws Exception {
             // Carrega o arquivo FXML
-            Parent root = FXMLLoader.load(getClass().getResource("/View/view.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/View/Person/login.fxml"));
 
             // Configura a cena
             Scene scene = new Scene(root, 1039, 559);
